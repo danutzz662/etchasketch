@@ -20,7 +20,7 @@ function generateGrid(number) {
     box.className = "box";
     box.style.width = boxHeight + "px";
     box.style.height = boxHeight + "px";
-    box.addEventListener("mouseover", (event) => {
+    box.addEventListener("mouseenter", (event) => {
       event.target.style.backgroundColor = getRandomColor();
     });
     container.appendChild(box);
@@ -28,7 +28,7 @@ function generateGrid(number) {
 }
 
 function getRandomColor() {
-  const letters = "123456789ABCDEF";
+  const letters = "0123456789ABCDEF";
   let color = "#";
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
