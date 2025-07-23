@@ -1,0 +1,41 @@
+body {
+  background-color: #F0E7D8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  font-family: Calibri;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0 5px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
+  border: solid;
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: white;
+  background-color: blueviolet;
+  font-family: Calibi;
+  font-weight: 500;
+  font-size: 16px;
+}
