@@ -28,7 +28,7 @@ h1 {
 .box {
   box-sizing: border-box;
   gap: 1px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
 }
 
 button {
