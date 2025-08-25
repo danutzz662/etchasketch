@@ -1,5 +1,6 @@
 let container = document.querySelector(".container");
 const generate = document.querySelector(".generateGrid");
+const clearBtn = document.querySelector('.clear-btn');
 let containerSize;
 generate.addEventListener("click", () => {
   containerSize = Number(
@@ -26,6 +27,18 @@ function generateGrid(number) {
     container.appendChild(box);
   }
 }
+
+// Clear the grid
+function clearGrid() {
+  // gets all the elements that have a 'box' class AND have a background-color property
+  const boxes = Array.from(document.querySelectorAll('.box')).filter(box => {
+    return box.style.backgroundColor !== '';
+  });
+  boxes.forEach(box => {
+    box.style.removeProperty('background-color');
+  });
+}
+clearBtn.addEventListener('click', clearGrid);
 
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
